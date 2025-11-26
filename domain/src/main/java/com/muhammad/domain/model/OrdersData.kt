@@ -1,0 +1,13 @@
+package com.muhammad.domain.model
+
+import androidx.compose.runtime.Immutable
+
+@Immutable
+data class OrdersData(
+    val id: Int,
+    val items: List<OrderProductItem>,
+    val orderDate: String,
+    val status: String,
+    val totalAmount: Double,
+    val userId: Int
+)
